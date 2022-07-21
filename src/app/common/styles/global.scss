@@ -1,0 +1,21 @@
+.gl-layout-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.gl-layout-content {
+  width: 100%;
+  height: 100%;
+}
+
+.gl-page-content {
+  padding-left: var(--page-content-padding);
+  padding-right: var(--page-content-padding);
+  max-width: 1888px;
+  margin-left: auto;
+  margin-right: auto;
+}
