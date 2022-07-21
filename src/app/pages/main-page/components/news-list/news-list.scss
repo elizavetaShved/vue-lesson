@@ -1,0 +1,64 @@
+.container {
+  padding: 32px 0;
+}
+
+.news-item-wrapper {
+  & + & {
+    margin-top: 24px;
+  }
+}
+
+.article-title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+
+.article-article-text {
+  font-size: 14px;
+  line-height: 22px;
+
+  b {
+    font-weight: 700;
+  }
+}
+
+.issues-wrapper {
+  margin-top: 18px;
+}
+
+.issues-list {
+  padding-top: 10px;
+
+  &:not(.mod-show) {
+    display: none;
+  }
+}
+
+.issues-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+
+  & + & {
+    margin-top: 6px;
+  }
+}
+
+.issues-name-link {
+  font-weight: 700;
+  padding: 8px;
+  margin: -8px 0 -8px -8px;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-grey-very-dark);
+  margin-top: 10px;
+}

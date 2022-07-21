@@ -1,19 +1,30 @@
+@import "sizes";
+
 :root {
   /* page-content */
-  --page-content-padding: 16px;
+  --page-content-padding: 30px;
 
-  /* colors */
+  @include for-md-down {
+    --page-content-padding: 16px;
+  }
+
   --color-text: #404040;
   --color-fuchsia: #A6328D;
   --color-green: #31AE54;
   --color-white: #FFFFFF;
   --color-grey: #FAFAFA;
-  --dark-color-grey: #9E9E9E;
+  --color-grey-light: #F1F1F1;
+  --color-grey-middle: #D3D3D3;
+  --color-grey-dark: #9E9E9E;
+  --color-grey-very-dark: rgba(0, 0, 0, 0.4);
 
-  /* transitions */
+  --box-shadow-main: 0 0.33px 0 rgba(60, 60, 67, .29);
+  --box-shadow-secondary: 0 4px 40px rgba(0, 0, 0, 0.07);
+
   --transition-duration-short: 200ms;
   --transition-duration-fast: 350ms;
 
-  /* font-family */
+  --border-radius: 10px;
+
   --font-family-intel: 'Intel', sans-serif;
 }
