@@ -1,8 +1,8 @@
 <template>
   <button
     type="button"
-    class="toggler"
-    :class="{'mod-show': isOpen}"
+    class="news-toggler"
+    :class="{'news-toggler--show': isOpen}"
     @click="onClickToggler"
   >
     {{ isOpen ? "Hide issues" : "View issues" }}

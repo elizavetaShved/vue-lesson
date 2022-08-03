@@ -1,14 +1,14 @@
 <template>
   <a
     :href="user.link"
-    class="user-link"
+    class="news-user"
   >
     <img
       :src="user.img"
       :alt="user.name"
-      class="user-img"
+      class="news-user__img"
     >
-    <div class="user-name">
+    <div class="news-user__name">
       {{ user.name }}
     </div>
   </a>

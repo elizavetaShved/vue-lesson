@@ -1,49 +1,49 @@
 <template>
-  <div class="container">
-    <div class="gl-page-content mod-small">
+  <div class="news-list">
+    <div class="news-list__content-wrapper">
       <ul class="news-list">
         <li
           v-for="(news, index) in newsList"
           :key="index"
-          class="news-item-wrapper"
+          class="news-list__item-wrapper"
         >
           <user-link :user="news.user"/>
 
           <el-article :followersNum="news.followersNum" :branchNum="news.branchNum">
             <!-- тут slot не оч уместен, но в задании нужно сделать слотом-->
             <template v-slot:articleName>
-              <div class="article-title">
+              <div class="news-list__article-title">
                 {{ news.articleName }}
               </div>
             </template>
             <template v-slot:articleText>
-              <div v-html="news.articleText" class="article-article-text"/>
+              <div v-html="news.articleText" class="news-list__article-text"/>
             </template>
           </el-article>
 
-          <div class="issues-wrapper">
+          <div class="news-list__issues-wrapper">
             <el-toggler :isOpen="togglerOpenIndex[index]" @on-click="onChangeStatusToggler(index)"/>
 
             <ul
-              class="issues-list"
+              class="news-list__issues-list"
               :class="{'mod-show': togglerOpenIndex[index]}"
             >
               <li
                 v-for="(issue, index) in news.issuesList"
                 :key="index"
-                class="issues-item"
+                class="news-list__issues-item"
               >
-                <a :href="issue.user.link" class="issues-name-link">
+                <a :href="issue.user.link" class="news-list__issues-name-link">
                   {{ issue.user.name }}
                 </a>
-                <div class="issues-text">
+                <div class="news-list__issues-text">
                   {{ issue.issues }}
                 </div>
               </li>
             </ul>
           </div>
 
-          <div class="date">
+          <div class="news-list__date">
             {{ parsDate(news.date) }}
           </div>
         </li>

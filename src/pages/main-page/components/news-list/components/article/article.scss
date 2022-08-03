@@ -1,41 +1,48 @@
-.controls {
-  display: flex;
-  margin-top: 32px;
-}
+@import "src/styles/mixins";
 
-.btn {
-  padding: 4px 10px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  border: 1px solid var(--color-grey-middle);
-  border-left-color: transparent;
+.news-article {
+  @include block-shadow();
 
-  &:first-child {
-    border-left-color: var(--color-grey-middle);
-    border-radius: 6px 0 0 6px;
+  &__controls {
+    display: flex;
+    margin-top: 32px;
   }
 
-  &:last-child {
-    border-radius: 0 6px 6px 0;
+  &__btn {
+    padding: 4px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    border: 1px solid var(--color-grey-middle);
+    border-left-color: transparent;
+
+    &:first-child {
+      border-left-color: var(--color-grey-middle);
+      border-radius: 6px 0 0 6px;
+    }
+
+    &:last-child {
+      border-radius: 0 6px 6px 0;
+    }
+
+    &--grey {
+      background-color: var(--color-grey-light);
+    }
+
+    &--star, &--fork {
+      padding-left: 32px;
+      background-size: 16px;
+      background-repeat: no-repeat;
+      background-position: top 50% left 12px;
+    }
+
+    &--star {
+      background-image: url("/public/icon/star.svg");
+    }
+
+    &--fork {
+      background-image: url("/public/icon/branch.svg");
+    }
   }
 
-  &.mod-grey {
-    background-color: var(--color-grey-light);
-  }
-
-  &.mod-star, &.mod-fork {
-    padding-left: 32px;
-    background-size: 16px;
-    background-repeat: no-repeat;
-    background-position: top 50% left 12px;
-  }
-
-  &.mod-star {
-    background-image: url("/public/icon/star.svg");
-  }
-
-  &.mod-fork {
-    background-image: url("/public/icon/branch.svg");
-  }
 }

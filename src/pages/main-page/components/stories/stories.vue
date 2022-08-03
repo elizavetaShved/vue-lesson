@@ -1,22 +1,25 @@
 <template>
-  <div class="list-container">
-    <ul class="list-wrapper">
+  <div class="stories">
+    <ul class="stories__wrapper">
       <li
         v-for="(user, index) in usersList"
         :key="index"
-        class="item-wrapper"
+        class="stories__item-wrapper"
       >
-        <button type="button" class="item-button">
-              <span class="avatar-img-wrapper">
-              <img
-                :src="user.img"
-                :alt="user.name"
-                class="avatar-img"
-              >
-              </span>
-          <span class="avatar-name">
-                {{ user.name }}
-              </span>
+        <button
+          type="button"
+          class="stories__item-button"
+        >
+          <span class="stories__avatar-img-wrapper">
+            <img
+              :src="user.img"
+              :alt="user.name"
+              class="stories__avatar-img"
+            >
+          </span>
+          <span class="stories__avatar-name">
+            {{ user.name }}
+          </span>
         </button>
       </li>
     </ul>

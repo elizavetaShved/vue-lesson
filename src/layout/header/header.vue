@@ -1,17 +1,17 @@
 <template>
   <header class="header">
-    <div class="gl-page-content">
-      <div class="content">
-        <a href="/" class="logo-link"/>
+    <div class="header__content-wrapper">
+      <div class="header__content">
+        <a href="/" class="header__logo-link"/>
 
-        <div class="controls-wrapper">
-          <a href="" class="link link-home"/>
+        <div class="header__controls-wrapper">
+          <a href="" class="header__link header__link--home"/>
 
-          <a href="" class="link link-account">
-            <img :src="avatarImg" alt="account" class="link-account-image">
+          <a href="" class="header__link header__link--account">
+            <img :src="avatarImg" alt="account" class="header__link-image">
           </a>
 
-          <a class="link link-exit"/>
+          <a class="header__link header__link--exit"/>
         </div>
       </div>
 
@@ -32,6 +32,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import "header";
-</style>
+<style lang="scss" scoped src="./header.scss"/>

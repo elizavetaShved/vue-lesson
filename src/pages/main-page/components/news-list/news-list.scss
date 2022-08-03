@@ -1,64 +1,70 @@
-.container {
+@import "src/styles/mixins";
+
+.news-list {
   padding: 32px 0;
-}
 
-.news-item-wrapper {
-  & + & {
-    margin-top: 24px;
+  &__content-wrapper {
+    @include page-content--small();
   }
-}
 
-.article-title {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 28px;
-  margin-bottom: 16px;
-}
+  &__item-wrapper {
+    & + & {
+      margin-top: 24px;
+    }
+  }
 
-.article-article-text {
-  font-size: 14px;
-  line-height: 22px;
-
-  b {
+  &__article-title {
     font-weight: 700;
+    font-size: 26px;
+    line-height: 28px;
+    margin-bottom: 16px;
   }
-}
 
-.issues-wrapper {
-  margin-top: 18px;
-}
+  &__article-text {
+    font-size: 14px;
+    line-height: 22px;
 
-.issues-list {
-  padding-top: 10px;
-
-  &:not(.mod-show) {
-    display: none;
+    b {
+      font-weight: 700;
+    }
   }
-}
 
-.issues-item {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  display: flex;
-
-  & + & {
-    margin-top: 6px;
+  &__issues-wrapper {
+    margin-top: 18px;
   }
-}
 
-.issues-name-link {
-  font-weight: 700;
-  padding: 8px;
-  margin: -8px 0 -8px -8px;
-}
+  &__issues-list {
+    padding-top: 10px;
 
-.date {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-grey-very-dark);
-  margin-top: 10px;
+    &:not(.mod-show) {
+      display: none;
+    }
+  }
+
+  &__issues-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+
+    & + & {
+      margin-top: 6px;
+    }
+  }
+
+  &__issues-name-link {
+    font-weight: 700;
+    padding: 8px;
+    margin: -8px 0 -8px -8px;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-grey-very-dark);
+    margin-top: 10px;
+  }
 }

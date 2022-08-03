@@ -1,5 +1,5 @@
 <template>
-  <div class="gl-layout-wrapper">
+  <div class="layout-wrapper">
     <main-page/>
   </div>
 </template>

@@ -5,11 +5,8 @@
     </template>
   </layout-header>
 
-
-  <main class="gl-layout-content-wrapper">
-    <div class="container">
-      <news-list/>
-    </div>
+  <main class="layout-content">
+    <news-list/>
   </main>
 </template>
 
@@ -27,5 +24,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped src="./main-page.scss"/>
