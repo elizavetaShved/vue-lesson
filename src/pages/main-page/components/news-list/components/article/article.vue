@@ -36,6 +36,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import "article";
-</style>
+<style lang="scss" scoped src="./article.scss"/>

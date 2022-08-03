@@ -29,6 +29,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import "user-link";
-</style>
+<style lang="scss" scoped src="./user-link.scss"/>

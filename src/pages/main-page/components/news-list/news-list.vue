@@ -54,10 +54,10 @@
 
 <script>
 
-import { newsListData } from "@/app/pages/main-page/components/news-list/news-list-data.js";
-import UserLink from "@/app/pages/main-page/components/news-list/components/user-link/user-link";
-import ElArticle from "@/app/pages/main-page/components/news-list/components/article/article";
-import ElToggler from "@/app/pages/main-page/components/news-list/components/toggler/toggler";
+import { newsListData } from "@/pages/main-page/components/news-list/news-list-data.js";
+import UserLink from "@/pages/main-page/components/news-list/components/user-link/user-link";
+import ElArticle from "@/pages/main-page/components/news-list/components/article/article";
+import ElToggler from "@/pages/main-page/components/news-list/components/toggler/toggler";
 
 export default {
   name: 'news-list',
@@ -89,6 +89,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import "news-list";
-</style>
+<style lang="scss" scoped src="./news-list.scss"/>

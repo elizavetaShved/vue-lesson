@@ -14,9 +14,9 @@
 </template>
 
 <script>
-import ElStories from "@/app/pages/main-page/components/stories/stories";
-import LayoutHeader from "@/app/layout/header/header";
-import NewsList from "@/app/pages/main-page/components/news-list/news-list";
+import ElStories from "@/pages/main-page/components/stories/stories";
+import LayoutHeader from "@/layout/header/header";
+import NewsList from "@/pages/main-page/components/news-list/news-list";
 
 export default {
   name: 'main-page',
@@ -28,6 +28,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import "main-page";
-</style>
+<style lang="scss" scoped src="./main-page.scss"/>

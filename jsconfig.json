@@ -15,5 +15,13 @@
       "dom.iterable",
       "scripthost"
     ]
-  }
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue"
+  ],
+  "include": [
+    "./src/**/*"
+  ]
 }

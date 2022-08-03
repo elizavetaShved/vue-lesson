@@ -26,6 +26,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import "toggler";
-</style>
+<style lang="scss" scoped src="./toggler.scss"/>

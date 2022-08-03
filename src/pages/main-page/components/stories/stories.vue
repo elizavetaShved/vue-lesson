@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import { usersList } from "@/app/pages/main-page/components/stories/usersList";
+import { usersList } from "@/pages/main-page/components/stories/usersList";
 
 export default {
   name: 'el-stories',
@@ -36,6 +36,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import "stories";
-</style>
+<style lang="scss" scoped src="./stories.scss"/>

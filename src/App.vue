@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import MainPage from "./app/pages/main-page/main-page";
+import MainPage from "./pages/main-page/main-page";
 
 export default {
   name: 'App',
@@ -15,9 +15,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import "src/app/common/styles/reset.scss";
-@import "src/app/common/styles/fontface.scss";
-@import "src/app/common/styles/consts.scss";
-@import "src/app/common/styles/global.scss";
-</style>
+<style src="./styles/styles.scss" lang="scss"/>
